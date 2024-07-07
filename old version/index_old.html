@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Pandeya's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .animate-fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .theme-color {
+            background-color: #f59e0b;
+            color: #1f2937;
+        }
+
+        .text-theme {
+            color: #f59e0b;
+        }
+
+        .hover-text-theme:hover {
+            color: #f59e0b;
+        }
+
+        .shadow-theme {
+            box-shadow: 0 4px 6px rgba(31, 41, 55, 0.1);
+        }
+
+        .bg-light {
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="theme-color text-white py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Aayush Pandeya</h1>
+            <nav>
+                <a href="#about" class="px-3 hover-text-theme">About</a>
+                <a href="#skills" class="px-3 hover-text-theme">Skills</a>
+                <a href="#specializations" class="px-3 hover-text-theme">Specializations</a>
+                <a href="#works" class="px-3 hover-text-theme">Works</a>
+                <a href="#goals" class="px-3 hover-text-theme">Future Goals</a>
+                <a href="#contact" class="px-3 hover-text-theme">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-10">
+        <!-- About Section -->
+        <section id="about" class="my-10 animate-fade-in">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="https://via.placeholder.com/150" alt="Aayush Pandeya" class="w-32 h-32 rounded-full mr-4 shadow-theme mb-4 md:mb-0">
+                <div>
+                    <p class="text-lg mb-4">Hello! I'm Aayush Pandeya from Bagdol, Lalitpur, Nepal. I am passionate about web development and design. I enjoy creating user-friendly, responsive websites with modern aesthetics.</p>
+                    <img src="https://undraw.co/api/illustrations/random" alt="Illustration" class="w-full md:w-64 rounded shadow-theme">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="my-10 animate-fade-in">
+            <h2 class="text-2xl font-bold mb-4">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded shadow-theme hover:shadow-lg transition-shadow">
+                    <i class="fas fa-code text-3xl text-theme"></i>
+                    <h3 class="text-xl font-semibold mt-4">Web Development</h3>
+                    <p class="mt-2">Proficient in HTML, CSS, JavaScript, and various frameworks.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-theme hover:shadow-lg transition-shadow">
+                    <i class="fas fa-palette text-3xl text-theme"></i>
+                    <h3 class="text-xl font-semibold mt-4">UI/UX Design</h3>
+                    <p class="mt-2">Skilled in designing user-friendly interfaces with a focus on user experience.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-theme hover:shadow-lg transition-shadow">
+                    <i class="fas fa-database text-3xl text-theme"></i>
+                    <h3 class="text-xl font-semibold mt-4">Backend Development</h3>
+                    <p class="mt-2">Experienced with Node.js, Express, and database management.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specializations Section -->
+        <section id="specializations" class="my-10 animate-fade-in">
+            <h2 class="text-2xl font-bold mb-4">Specializations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded shadow-theme hover:shadow-lg transition-shadow">
+                    <i class="fas fa-mobile-alt text-3xl text-theme"></i>
+                    <h3 class="text-xl font-semibold mt-4">Responsive Web Design</h3>
+                    <p class="mt-2">Creating mobile-friendly designs that look great on all devices.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-theme hover:shadow-lg transition-shadow">
+                    <i class="fas fa-tachometer-alt text-3xl text-theme"></i>
+                    <h3 class="text-xl font-semibold mt-4">Performance Optimization</h3>
+                    <p class="mt-2">Optimizing websites for speed and performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="my-10 animate-fade-in">
+            <h2 class="text-2xl font-bold mb-4">My Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Example Work 1 -->
+                <div class="bg-white p-6 rounded shadow-theme hover:shadow-lg transition-shadow">
+                    <img src="https://via.placeholder.com/300x200" alt="Work 1" class="rounded mb-4 shadow">
+                    <h3 class="text-xl font-semibold">Project Title 1</h3>
+                    <p class="mt-2">Brief description of the project. Showcase your work, technologies used, and the outcome.</p>
+                </div>
+                <!-- Example Work 2 -->
+                <div class="bg-white p-6 rounded shadow-theme hover:shadow-lg transition-shadow">
+                    <img src="https://via.placeholder.com/300x200" alt="Work 2" class="rounded mb-4 shadow">
+                    <h3 class="text-xl font-semibold">Project Title 2</h3>
+                    <p class="mt-2">Brief description of the project. Showcase your work, technologies used, and the outcome.</p>
+                </div>
+                <!-- Example Work 3 -->
+                <div class="bg-white p-6 rounded shadow-theme hover:shadow-lg transition-shadow">
+                    <img src="https://via.placeholder.com/300x200" alt="Work 3" class="rounded mb-4 shadow">
+                    <h3 class="text-xl font-semibold">Project Title 3</h3>
+                    <p class="mt-2">Brief description of the project. Showcase your work, technologies used, and the outcome.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Goals Section -->
+        <section id="goals" class="my-10 animate-fade-in">
+            <h2 class="text-2xl font-bold mb-4">Future Goals</h2>
+            <p class="text-lg">My future goals include continuing to develop my skills in web development, learning new technologies, and contributing to innovative projects that make a positive impact.</p>
+            <div class="mt-6">
+                <img src="https://lottiefiles.com/medium/animations/lf20_74lwhcdu.json" alt="Future Goals" class="w-full md:w-1/2 mx-auto rounded shadow-theme">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="my-10 animate-fade-in">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <div class="bg-white p-6 rounded shadow-theme hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold">Get in Touch</h3>
+                <p class="mt-2">Feel free to reach out to me via email or follow me on social media.</p>
+                <ul class="mt-4">
+                    <li><i class="fas fa-envelope text-theme"></i> Email: <a href="mailto:aayush@example.com" class="text-blue-600 hover:underline">aayush@example.com</a></li>
+                    <li class="mt-2"><i class="fab fa-linkedin text-theme"></i> LinkedIn: <a href="https://linkedin.com/in/aayushpandeya" class="text-blue-600 hover:underline">linkedin.com/in/aayushpandeya</a></li>
+                    <li class="mt-2"><i class="fab fa-github text-theme"></i> GitHub: <a href="https://github.com/aayushpandeya" class="text-blue-600 hover:underline">github.com/aayushpandeya</a></li>
+                    <li class="mt-2"><i class="fab fa-twitter text-theme"></i> Twitter: <a href="https://twitter.com/aayushpandeya" class="text-blue-600 hover:underline">@aayushpandeya</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+   <footer class="theme-color text-white py-4 shadow-inner">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 Aayush Pandeya. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts for animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+<script>
+    // Example of how to use Lottie animations
+    lottie.loadAnimation({
+        container: document.querySelector('#goals img'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets9.lottiefiles.com/packages/lf20_74lwhcdu.json'
+    });
+</script>
+</body>
+
+</html>

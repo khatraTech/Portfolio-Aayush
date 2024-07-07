@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayush Pandeya | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-P0kzx7npFynO8hUOWVbGCG1zDGdF7OJ/8C5AZevn9QFvW5wxNiDvZd4DUR+W1C1rG4zFV6ZuSHOZ3V6MoybKhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    /* Reset and basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero section */
+.hero {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Navigation */
+.navigation {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  background-color: #ffffff;
+  color: #343a40;
+  border-radius: 5px;
+}
+
+/* About section */
+.about {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.about p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Skills section */
+.skills {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.skills-icons div {
+  text-align: center;
+  margin: 0 20px;
+  width: 200px;
+}
+
+.skills-icons i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.skills-icons p {
+  font-size: 1.2rem;
+  color: #343a40;
+}
+
+/* Experience section */
+.experience {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.experience-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.experience-item {
+  text-align: center;
+  margin: 0 20px;
+  width: 250px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Goals section */
+.goals {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.goals h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.goals p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Projects section */
+.projects {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.project-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.project-card .btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #343a40;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #555b61;
+}
+
+.load-more {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #343a40;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.load-more:hover {
+  background-color: #555b61;
+}
+
+/* Contact section */
+.contact {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #343a40;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #555b61;
+}
+
+/* Associated with section */
+.associated-with {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.associated-with h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.company-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+.company-icon {
+  padding: 0 10px;
+}
+
+.company-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ced4da;
+}
+
+
+</style>
+
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Aayush Pandeya</h1>
+      <p>Front-End Developer | Creating stunning & responsive web experiences.</p>
+    </div>
+  </header>
+
+  <nav class="navigation">
+    <div class="container">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am based in Bagdol, Lalitpur, currently studying at Presidential Graduate School. With a background in managing businesses like Khatra Dokan and KhatraTech, I specialize in digital marketing, entrepreneurship, leadership, and professional networking.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-icons">
+        <div>
+          <i class="fas fa-chart-line"></i>
+          <p>Digital Marketing</p>
+        </div>
+        <div>
+          <i class="fas fa-lightbulb"></i>
+          <p>Entrepreneurship</p>
+        </div>
+        <div>
+          <i class="fas fa-users"></i>
+          <p>Leadership</p>
+        </div>
+        <div>
+          <i class="fas fa-network-wired"></i>
+          <p>Professional Networking</p>
+        </div>
+        <!-- Add more skills as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <h3>Khatra Dokan</h3>
+          <p>Online Quick Commerce</p>
+        </div>
+        <div class="experience-item">
+          <h3>KhatraTech</h3>
+          <p>IT and Service Solution Company</p>
+        </div>
+        <div class="experience-item">
+          <h3>Family Businesses/Ventures</h3>
+          <!-- Add details of family businesses/ventures as needed -->
+        </div>
+        <div class="experience-item">
+          <h3>Nakab</h3>
+          <p>Clothing Brand Startup</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="goals" class="goals">
+    <div class="container">
+      <h2>Goals</h2>
+      <p>
+        My goal is to lead Khatra Dokan to new heights, revolutionizing quick commerce with innovation and excellence.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Project Name</h3>
+          <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Name</h3>
+          <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+      <button class="load-more">Load More</button>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="submit-form.php" method="POST">
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i> Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment"></i> Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="associated-with" class="associated-with">
+    <div class="container">
+      <h2>Associated with</h2>
+      <div class="company-icons">
+        <div class="company-icon"><img src="company1.png" alt="Company 1"></div>
+        <div class="company-icon"><img src="company2.png" alt="Company 2"></div>
+        <div class="company-icon"><img src="company3.png" alt="Company 3"></div>
+        <div class="company-icon"><img src="company4.png" alt="Company 4"></div>
+        <!-- Add more company icons as needed -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Aayush Pandeya</p>
+      <ul class="social-links">
+        <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+        <!-- Add more social links as needed -->
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript for handling form submission
+    const form = document.querySelector('.contact-form');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Fetch API example to handle form submission
+      const formData = new FormData(form);
+      fetch('submit-form.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Handle response or show success message
+        console.log('Form submission successful!', data);
+        alert('Thank you for your message! We will get back to you soon.');
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        alert('Oops! Something went wrong. Please try again later.');
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Pandeya - Digital Marketer & Entrepreneur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3498db',
+                        secondary: '#2ecc71',
+                        accent: '#e74c3c',
+                        dark: '#34495e',
+                        light: '#ecf0f1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-dark bg-light">
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">Aayush Pandeya</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-primary transition duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-primary transition duration-300">About</a></li>
+                <li><a href="#skills" class="hover:text-primary transition duration-300">Skills</a></li>
+                <li><a href="#experience" class="hover:text-primary transition duration-300">Experience</a></li>
+                <li><a href="#involved-in" class="hover:text-primary transition duration-300">Involved In</a></li>
+                <li><a href="#contact" class="hover:text-primary transition duration-300">Contact</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-dark hover:text-primary">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <section id="home" class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+            <div class="container mx-auto px-10  flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Aayush Pandeya</h1>
+                    <p class="text-xl mb-8">Entrepreneur | Leader</p>
+                    <a href="#contact" class="bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition duration-300">Get in Touch</a>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0" data-aos="fade-left">
+                    <!-- <img src="assets/undraw_be_the_hero_ssr2.svg" alt="Hero Illustration" class="w-full max-w-md mx-auto"> -->
+                    <img src="assets/aayush PP.jpg" alt="Hero Illustration" class="w-full max-w-md mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                        <img src="assets/undraw_profile_details_re_ch9r.svg" alt="About Illustration" class="w-full max-w-md mx-auto">
+                    </div>
+                    <div class="md:w-1/2 md:pl-10" data-aos="fade-left">
+                        <p class="mb-4">Based in Bagdol, Lalitpur, I'm a driven entrepreneur and digital marketing expert currently studying at Presidential Graduate School. With a passion for innovation and leadership, I'm working with cutting-edge companies like Khatra Dokan and KhatraTech, while also managing family businesses.</p>
+                        <p>My goal is to revolutionize the quick commerce industry through innovative solutions and exceptional leadership.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="bg-light py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Skills & Specializations</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="flip-left" data-aos-delay="100">
+                        <i class="fas fa-bullhorn text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="flip-left" data-aos-delay="200">
+                        <i class="fas fa-lightbulb text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Entrepreneurship</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="flip-left" data-aos-delay="300">
+                        <i class="fas fa-users text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Leadership</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="flip-left" data-aos-delay="400">
+                        <i class="fas fa-network-wired text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Professional Networking</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="flip-left" data-aos-delay="500">
+                        <i class="fas fa-chart-line text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Strategic Planning</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="flip-left" data-aos-delay="600">
+                        <i class="fas fa-handshake text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Business Development</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Experience</h2>
+        
+                <!-- Timeline -->
+                <div class="relative">
+                    <div class="absolute hidden md:block w-1 bg-gray-300 top-0 bottom-0 left-1/2 transform -translate-x-1/2"></div>
+        
+                    <!-- Timeline Items -->
+                    <div class="space-y-12 md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-6">
+                        <!-- Timeline Item 1 -->
+                        <div class="flex items-center space-x-4 md:mb-0" data-aos="fade-up">
+                            <div class="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center px-2">
+                                <span class="text-gray-600 text-lg text-center">2024</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">KhatraTech</h3>
+                                <p class="text-gray-600">IT Service and Software Solution Company</p>
+                                <p class="mt-2 md:text-lg">Managing client relationships and developed strategic partnerships to drive business growth.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Timeline Item 2 -->
+                        <div class="flex items-center space-x-4 md:mb-0" data-aos="fade-up">
+                            <div class="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center px-2">
+                                <span class="text-gray-600 text-lg text-center">2023</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Khatra Dokan</h3>
+                                <p class="text-gray-600">Online Quick Commerce</p>
+                                <p class="mt-2 md:text-lg">Leading the digital marketing strategy and oversee operations for this innovative e-commerce platform.</p>
+                            </div>
+                        </div>
+                       
+                        <!-- Timeline Item 3 -->
+                        <div class="flex items-center space-x-4" data-aos="fade-up">
+                            <div class="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center px-2">
+                                <span class="text-gray-600 text-lg text-center">2019</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Nakab</h3>
+                                <p class="text-gray-600">Clothing Brand Startup</p>
+                                <p class="mt-2 md:text-lg">Gained valuable experience in brand development and operations for this fashion startup.</p>
+                            </div>
+                        </div>
+                        <!-- Timeline Item 4 -->
+                        <div class="flex items-center space-x-4 md:mb-0" data-aos="fade-up">
+                            <div class="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center px-2">
+                                <span class="text-gray-600 text-lg text-center">2016</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Family Businesses</h3>
+                                <p class="text-gray-600">Various roles and responsibilities</p>
+                                <p class="mt-2 md:text-lg">Contributed to the growth and management of multiple family-owned enterprises across different sectors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="involved-in" class="bg-light py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Involved In</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in">
+                        <img src="assets/khatraDokan.png" alt="Project 1" class="w-full h-48 object-contain">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Khatra Dokan</h3>
+                            <p>CoFounder and CEO of Khatra Dokan, led the strategic expansion of Khatra Dokan into new markets, increasing user base and sales.</p>
+                        </div>
+                        <a href="https://khatradokan.com" class="bg-primary text-white p-4 block w-full text-center mt-4 rounded hover:bg-gray-800">Learn More</a>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="assets/khatratech.jpg" alt="Project 2" class="w-full h-48 object-contain">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">KhatraTech</h3>
+                            <p>Established and led CSR activities within KhatraTech to develop cutting-edge IT solutions for clients.</p>
+                        </div>
+                        <a href="https://khatratech.com" class="bg-primary text-white p-4 block w-full text-center mt-10 rounded hover:bg-gray-800">Learn More</a>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="assets/nakab.png" alt="Project 3" class="w-full h-48 object-contain">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Nakab</h3>
+                            <p>CoFounded, Developed and launched Nakab, a clothing fashion brand resulting in an increase in customers and sales.</p>
+                        </div>
+                        <a href="#" class="bg-primary text-white p-4 block w-full text-center mt-4 rounded hover:bg-gray-800">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="goal" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">My Goal</h2>
+                <div class="bg-light p-8 rounded-lg shadow-md" data-aos="zoom-in">
+                    <img src="assets/undraw_goals_re_lu76.svg" alt="Goals Illustration" class="w-full max-w-md mx-auto mb-6">
+                    <p class="text-xl font-semibold text-primary">"Lead Khatra Dokan to New Heights: Revolutionize Quick Commerce with Innovation and Excellence"</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="associated" class="bg-light py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Associated With</h2>
+                <div class="flex flex-wrap justify-center items-center gap-8" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/khatraDokan.png" alt="Khatra Dokan" class="h-12 object-contain">
+                    <img src="assets/khatratech.jpg" alt="KhatraTech" class="h-12 object-contain">
+                    <img src="assets/nakab.png" alt="Nakab" class="h-12 object-contain">
+                    <img src="assets/helios.jpg" alt="HeliosNepal" class="h-12 object-contain">
+                    <!-- <img src="assets/" alt=" 5" class="h-12 object-contain"> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Contact Me</h2>
+               
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:text-center">
+                    <ul>
+                        <li class="flex items-center mb-6" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fa-solid fa-location-dot text-2xl text-primary mr-4"></i>
+                            <span class="text-lg">Lalitpur, Nepal</span>
+                        </li>
+                        <li class="flex items-center mb-6" data-aos="fade-up" data-aos-delay="300">
+                            <a href="mailto:aayushpandeya15@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-envelope text-2xl text-primary mr-4"></i>
+                            <span class="text-lg">aayushpandeya15@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center mb-6" data-aos="fade-up" data-aos-delay="400">
+                            <a href="tel:+9779813021085" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-phone text-2xl text-primary mr-4"></i>
+                            <span class="text-lg">+977 9813021085</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center mb-6" data-aos="fade-up" data-aos-delay="400">
+                            <a href="https://wa.me/+9779813021085" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp text-2xl text-primary mr-4"></i>
+                            <span class="text-lg">+977 9813021085</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center mb-6" data-aos="fade-up" data-aos-delay="500">
+                            <a href="https://linkedin.com/in/aayush-pandeya" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin text-2xl text-primary mr-4"></i>
+                            <span class="text-lg">Aayush Pandeya</span>
+                            </a>
+                        </li>
+                     
+                        <li class="flex items-center mb-6" data-aos="fade-up" data-aos-delay="800">
+                            <a href="https://facebook.com/aayush.pandeya.77" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook text-2xl text-primary mr-4"></i>
+                            <span class="text-lg">Aayush Pandeya</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center mb-6" data-aos="fade-up" data-aos-delay="900">
+                            <a href="https://instagram.com/aayush_pandeya" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram text-2xl text-primary mr-4"></i>
+                            <span class="text-lg">@aayush_pandeya</span>
+                            </a>
+                        </li>
+                        <!-- <li class="flex items-center mb-6" data-aos="fade-up" data-aos-delay="1000">
+                            <a href="https://youtube.com/aayush.pandeya.1" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-youtube text-2xl text-primary mr-4"></i>
+                            <span class="text-lg">youtube.com/yourname</span>
+                            </a>
+                        </li> -->
+                       
+                    </ul>
+                </div>
+                    <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                        <img src="assets/undraw_profile_re_4a55.svg" alt="Contact Illustration" class="w-full max-w-md mx-auto">
+                    </div>
+                    <form class="md:w-1/2 max-w-md mx-auto" data-aos="fade-left">
+                        <div class="mb-4">
+                            <input type="text" placeholder="Name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                            <input type="email" placeholder="Email" class="w-full mt-4 px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required>
+                            <textarea placeholder="Message" rows="5" class="w-full mt-4 px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" required></textarea>
+                            <button type="submit" class="w-full mt-4 bg-primary text-white py-2 rounded-lg hover:bg-opacity-90 transition duration-300">Send Message</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white py-6">
+            <div class="container mx-auto px-6">
+                <p class="text-center">© 2024 Aayush Pandeya. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Scripts for animations -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
